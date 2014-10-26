@@ -126,7 +126,7 @@ def main(argv=None):
 		argv = sys.argv
 
 	if len(argv) < 3:
-		print "Usage: command <InputFolder> <OutputFilename>"
+		print "Usage: command <InputFile> <OutputFilename>"
 		print "	<InputFile> must contain only the NRRD file to be processed"
 		print "	<OutputFilename> must contain the path and base name of the desired output, extension will be added automatically"
 		print "Note: this version does not process several folders recursively. "
