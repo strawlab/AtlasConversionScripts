@@ -48,8 +48,8 @@ def loadNRRD(filename):
 	try:
 		data, info = nrrd.read(filename)
 		return data
-	except:
-		print 'Error reading the nrrd file!'
+	except Exception as err:
+		print 'Error reading the nrrd file: %s'%err
 		exit()
 
 #This function uses the images retrieved with loadImgFunction (whould return a PIL.Image) and
